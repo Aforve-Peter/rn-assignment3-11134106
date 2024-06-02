@@ -115,7 +115,14 @@ export default function App() {
         </View>
         <Image source={require('./assets/pic.png')} style={styles.profileImage} />
       </View>
-     
+      <View style={styles.searchContainer}>
+        <Image source={require('./assets/search.png')} style={styles.searchIcon} />
+        <TextInput style={styles.searchInput} placeholder="Search" />
+        <TouchableOpacity onPress={() => {}}>
+          <Image source={require('./assets/List icon.jpg')} style={styles.listButton} />
+        </TouchableOpacity>
+      </View>
+
       <Text style={styles.sectionTitle}>Categories</Text>
       <View style={styles.categories}>
         {categories.map((category, index) => (
@@ -170,6 +177,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     marginRight: 10,
+    width:  500
   },
   sectionTitle: {
     fontSize: 18,
@@ -240,6 +248,9 @@ const styles = StyleSheet.create({
   listButton:{
     width: 40,
     height: 40
+  },
+  search:{
+
   }
 
 });
