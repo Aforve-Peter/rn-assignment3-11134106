@@ -67,7 +67,7 @@ const Category = ({ name, icon }) => (
     <Text style={styles.categoryText}>{name}</Text>
   </View>
 );
-/*
+
 const categories = [
   { name: 'Exercise', icon: require('./assets/exercise.png') },
   { name: 'Study', icon: require('./assets/study.png') },
@@ -96,7 +96,7 @@ const initialTasks = [
   'Water plants',
   'Watch a movie',
 ];
-*/
+
 export default function App() {
   const [tasks, setTasks] = useState(initialTasks);
 
